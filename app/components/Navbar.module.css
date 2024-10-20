@@ -1,13 +1,11 @@
-/* styles/Navbar.module.css */
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
     .navLink {
-      flex-basis: 100%; /* Force each link to take full width on small screens */
+      flex-basis: 100%; 
     }
   }
   
-  /* Navbar.module.css */
 .navLink {
-    background-color: #3b82f6; /* Tailwind's blue-500 */
+    background-color: #3b82f6;
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
@@ -15,6 +13,6 @@
   }
   
   .navLink:hover {
-    background-color: #1d4ed8; /* Tailwind's blue-700 */
+    background-color: #1d4ed8;
   }
-  
+   */

@@ -8,8 +8,8 @@ const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
-    e.preventDefault(); // Prevent the default form submission
-    setIsSubmitted(true); // Set the submitted state to true
+    e.preventDefault(); 
+    setIsSubmitted(true); 
   };
 
   return (
