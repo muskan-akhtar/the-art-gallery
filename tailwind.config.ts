@@ -8,6 +8,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        dancing: ['"Dancing Script"', 'cursive'],
+        pacifico: ['"Pacifico"', 'cursive'],
+        greatVibes: ['"Great Vibes"', 'cursive'],
+        satisfy: ['"Satisfy"', 'cursive'],
+        alexBrush: ['"Alex Brush"', 'cursive'],
+        sacramento: ['"Sacramento"', 'cursive'],
+        allura: ['"Allura"', 'cursive'],
+        parisienne: ['"Parisienne"', 'cursive'],
+        cookie: ['"Cookie"', 'cursive'],
+        bilbo: ['"Bilbo"', 'cursive'],
+        tangerine: ['"Tangerine"', 'cursive'],
+        lobster: ['"Lobster"', 'cursive'],
+        handwriting: ['"Shadows Into Light"', 'cursive'], // Adding more fonts
+        indieFlower: ['"Indie Flower"', 'cursive'],
+        kaushan: ['"Kaushan Script"', 'cursive'],
+        reenie: ['"Reenie Beanie"', 'cursive'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -16,4 +34,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;

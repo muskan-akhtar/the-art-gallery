@@ -1,27 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Great+Vibes&family=Satisfy&family=Alex+Brush&family=Sacramento&family=Allura&family=Parisienne&family=Cookie&family=Bilbo&family=Tangerine&family=Lobster&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.bg-custom-image {
+  background-color: teal;
+  background-image: 
+    url('/long5.jpg'), 
+    url('/between1.jpg'), 
+    url('/long1.jpg');
+  background-size: contain, contain, contain;
+  background-position: top,center,bottom; 
+  background-repeat: no-repeat; 
+  height: auto; 
+  min-height: 100lvh;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (max-width: 640px) {
+  .bg-custom-image {
+    min-height: 300vh; /* For mobile, to accommodate all images */
+  }
+  .bg-image1, .bg-image2, .bg-image3 {
+    height: 100vh; /* Ensure each image takes full height */
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
