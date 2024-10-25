@@ -17,10 +17,10 @@ const Contact = () => {
       <Navbar />
 
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-5xl font-bold text-center mb-6 text-white bg-gradient-to-r from-purple-500 to-blue-500 p-6 rounded-md shadow-lg">
+        <h1 className="text-5xl font-bold text-center mb-6 text-white bg-gradient-to-r from-purple-500 to-blue-500 p-6 rounded-md shadow-lg" data-aos="flip-down">
           Contact Us
         </h1>
-        <p className="text-center mb-6 text-gray-700 bg-white shadow-md p-4 rounded-md">
+        <p className="text-center mb-6 text-gray-700 bg-white shadow-md p-4 rounded-md" data-aos="flip-up">
           We would love to hear from you! Please fill out the form below or
           reach out via the provided contact details.
         </p>

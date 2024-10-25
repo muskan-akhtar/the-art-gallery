@@ -1,25 +1,42 @@
-import React from "react";
+"use client";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useState, useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="bg-custom-image">
       <Navbar />
 
-      <div className="text-black text-left font-semibold text-4xl font-serif p-4 m-4 bg-gradient-to-r from-blue-400 to-indigo-600 shadow-md">
+      <div
+        className="text-black text-left font-semibold text-4xl font-serif p-4 m-4 bg-gradient-to-r from-blue-400 to-indigo-600 shadow-md"
+        data-aos="flip-up"
+      >
         ABOUT OUR JOURNEY:
       </div>
 
-      <div className="text-black text-left font-semibold text-4xl font-serif p-4 m-4 bg-white shadow-md">
+      <div
+        className="text-black text-left font-semibold text-4xl font-serif p-4 m-4 bg-white shadow-md"
+        data-aos="flip-down"
+      >
         Welcome to The Art Gallery, where creativity meets passion!
       </div>
 
       <div className="container mx-auto px-4 py-8">
         <header>
-          <h1 className="font-bold font-serif text-left bg-gradient-to-r from-teal-400 hover:from-pink-500 hover:to-orange-500 pt-2 pl-2 pb-2 sm:text-3xl md:text-4xl lg:text-5xl mt-5 mb-5 mr-5 italic hover:not-italic">
+          <h1
+            className="font-bold font-serif text-left bg-gradient-to-r from-teal-400 hover:from-pink-500 hover:to-orange-500 pt-2 pl-2 pb-2 sm:text-3xl md:text-4xl lg:text-5xl mt-5 mb-5 mr-5 italic hover:not-italic"
+            data-aos="flip-down"
+            data-aos-once="true"
+          >
             About Us
           </h1>
         </header>
@@ -36,7 +53,9 @@ const About = () => {
           </section>
 
           <section className="my-6 bg-white p-4 rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold text-blue-600">Our Mission</h2>
+            <h2 className="text-2xl font-semibold text-blue-600">
+              Our Mission
+            </h2>
             <p>
               Our mission is to foster a community that appreciates and supports
               the arts. We provide a platform for artists to display their work
@@ -44,25 +63,32 @@ const About = () => {
             </p>
           </section>
 
-          <section className="my-6 bg-white p-4 rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold text-blue-600">Artist Spotlight</h2>
+          <section
+            className="my-6 bg-white p-4 rounded-lg shadow-md"
+            data-aos="fade-up"
+          >
+            <h2 className="text-2xl font-semibold text-blue-600">
+              Artist Spotlight
+            </h2>
             <p>
               We are proud to feature talented artists such as Muskan, whose
               works reflect the nature of this beautiful world.
             </p>
-            <div className="flex justify-center">
+            <div className="flex justify-center ">
               <Image
                 src="/artist.jpg"
                 alt="Muskan Akhtar"
-                width={800} 
-                height={450} 
-                className="rounded-md object-cover w-full max-w-xl" 
+                width={800}
+                height={450}
+                className="rounded-md object-cover w-full max-w-xl"
               />
             </div>
           </section>
 
           <section className="my-6 bg-white p-4 rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold text-blue-600">Upcoming Events</h2>
+            <h2 className="text-2xl font-semibold text-blue-600">
+              Upcoming Events
+            </h2>
             <ul className="list-disc pl-5">
               <li>
                 Art Workshop: 26-02-2022 - Join us for an interactive session.
@@ -75,10 +101,12 @@ const About = () => {
           </section>
 
           <section className="my-6 bg-white p-4 rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold text-blue-600">Customer Testimonials</h2>
+            <h2 className="text-2xl font-semibold text-blue-600">
+              Customer Testimonials
+            </h2>
             <blockquote className="italic border-l-4 border-blue-500 pl-4">
-            &quot;An amazing experience! I found the perfect piece for my home.&quot; -
-              Bill Gates
+              &quot;An amazing experience! I found the perfect piece for my
+              home.&quot; - Bill Gates
             </blockquote>
           </section>
 
