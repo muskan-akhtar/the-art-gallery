@@ -3,15 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import React, { useState, useEffect } from "react";
 
 const About = () => {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
-
   return (
     <div className="bg-custom-image">
       <Navbar />

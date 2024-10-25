@@ -81,11 +81,16 @@ const Home = () => {
         <section className="portfolio-section text-center mt-11">
           <h1
             className="font-semibold font-serif text-center bg-gradient-to-r from-Muskan hover:from-pink-500 hover:to-orange-500 pt-2 pl-2 pb-2 sm:text-1xl md:text-1xl lg:text-2xl italic hover:not-italic"
-            data-aos="fade-left" data-aos-easing="ease-in"
+            data-aos="fade-left"
+            data-aos-easing="ease-in"
           >
             Note: Click on a picture to see its detailed description.
           </h1>
-          <h2 className="font-bold font-serif text-center bg-gradient-to-r from-Akhtar hover:from-pink-500 hover:to-orange-500 pt-2 pl-2 pb-2 sm:text-4xl md:text-4xl lg:text-7xl mt-5 mr-5 italic hover:not-italic" data-aos="fade-up"  data-aos-anchor-placement="top-bottom">
+          <h2
+            className="font-bold font-serif text-center bg-gradient-to-r from-Akhtar hover:from-pink-500 hover:to-orange-500 pt-2 pl-2 pb-2 sm:text-4xl md:text-4xl lg:text-7xl mt-5 mr-5 italic hover:not-italic"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+          >
             Art Gallery Collection
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 p-6 justify-center">

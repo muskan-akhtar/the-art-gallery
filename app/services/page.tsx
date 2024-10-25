@@ -40,10 +40,16 @@ const Services = () => {
     <div className="bg-custom-image min-h-screen flex flex-col">
       <Navbar />
       <div className="container px-7 py-8">
-        <h1 className="font-bold font-serif text-center bg-gradient-to-r from-teal-400 pt-2 pl-2 pb-2 sm:text-4xl md:text-4xl lg:text-5xl mt-5 mb-5 mr-5 italic hover:not-italic" data-aos="flip-down">
+        <h1
+          className="font-bold font-serif text-center bg-gradient-to-r from-teal-400 pt-2 pl-2 pb-2 sm:text-4xl md:text-4xl lg:text-5xl mt-5 mb-5 mr-5 italic hover:not-italic"
+          data-aos="flip-down"
+        >
           Our Services
         </h1>
-        <p className="text-center text-gray-600 mb-12 text-3xl bg-white p-3 italic" data-aos="flip-down">
+        <p
+          className="text-center text-gray-600 mb-12 text-3xl bg-white p-3 italic"
+          data-aos="flip-down"
+        >
           At The Art Gallery, we offer a variety of services to enhance your
           artistic journey.
         </p>
